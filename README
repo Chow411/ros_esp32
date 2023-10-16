@@ -2,6 +2,14 @@
 
 This project is depended on PIO and ros, we use rosserial_ardunio communicate with ros system. 
 
-In this branch, we had tested on ROS 1 melodic | noetic, we provide two libs Control & Encoder which use to contorl wheel & read encoder's data then in source code we use the API which ROS provided to send pose message and read velocity message.
+In this branch, we had tested on ROS 1 melodic | noetic, in the code we code lib control & encoder which use to contorl wheel & read encoder's data then in source code we use the API which ROS provided to send pose message and read velocity message.
+
+This project hardware esp32 TB6612FNG PCF8574T and some LDO use to reduction voltage.
+
+We use  PCF8574T to extend esp32 pins (ESP32 pins is to few !! :( !! ), it use IIC so we just use 2 extend 8 pins control wheel forward and reverse rotation.
+
+Then we use TB6612FNG that make use can control wheel by pwm signal.
+
+
 
 ROS WIKI: https://wiki.ros.org/rosserial_arduino/Tutorials
